@@ -24,6 +24,5 @@ SELECT
 FROM products p1
 CROSS JOIN products p2
 WHERE ABS(p1.unit_price - p2.unit_price) < 0.25
-AND p1.product_id <> p2.product_id
 AND p1.product_name < p2.product_name
 ORDER BY price_diff DESC;
